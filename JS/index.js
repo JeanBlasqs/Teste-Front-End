@@ -1,3 +1,5 @@
+    // ANIMAÇÃO DE ENTRADA
+
 function verificarVisibilidade(){
     const elementos = document.querySelectorAll('.entradaesquerda, .entradadireita, .entradabaixo');
     const alturaJanela = window.innerHeight;
@@ -15,6 +17,8 @@ function verificarVisibilidade(){
     window.addEventListener('scroll', verificarVisibilidade);
     window.addEventListener('load', verificarVisibilidade);
 
+
+        // ATIVAÇÃO DO BOTÃO HAMBURGUER NO MODO MOBILE
 
     class MobileNavbar {
         constructor(mobileMenu, navList, navLinks) {
