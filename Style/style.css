@@ -58,6 +58,7 @@ html, body, .fundo{
   height: 2px;
   background: #fff;
   margin: 8px;
+  transition: 0.3s;
 }
 .nav-list.active{
   transform: translateX(0);
@@ -512,10 +513,10 @@ font-size: 1rem;
 
   .nav-list{
       position:absolute;
-      top:-40px;
+      top:-20px;
       right: 0;
-      width: 50vw;
-      height: 80vh;
+      width: 35vw;
+      height: 90vh;
       flex-direction: column;
       background-color: #222427;
       align-items: center;
@@ -524,7 +525,19 @@ font-size: 1rem;
       gap: 50px;
       z-index: 5;
   }
+  .btn-nav{
+    display: none;
+  }
+  .nav-list li{
+    margin-left: 0;
+    opacity: 0;
+  }
+  .mobile-menu{
+    display: block;
+    margin-left: 125px;
+    z-index: 6; 
 
+  }
   .fitness-opaco{
     display: none;
   }
@@ -546,8 +559,6 @@ font-size: 1rem;
 
 }
 
-
-
 .img-header{
   left: 190px;
   top: 280px;
@@ -567,17 +578,7 @@ font-size: 1rem;
   font-size: 10px ;
 
 }
-  .btn-nav{
-    display: none;
-  }
-  .nav-list li{
-    margin-left: 0;
-    opacity: 0;
-  }
-  .mobile-menu{
-    display: block;
-    margin-left: 125px;
-  }
+
 
   .p-header{
     display: grid;
@@ -602,6 +603,10 @@ font-size: 1rem;
   justify-content: center;
 }
 
+.aula-h2{
+    font-size: 25px;
+    text-align: center;
+}
 .class-img{
   width: 50vh;
   top: 350px;
@@ -643,8 +648,8 @@ font-size: 1rem;
 
 .membro-foto{
   position: absolute;
-  margin-top: -250px;
-  right: 370px;
+  margin-top: -200px;
+  right: 410px;
   width: 10px;
   }
 
@@ -662,7 +667,7 @@ font-size: 1rem;
   }
 
   .icone-estrela{
-    margin-top: -180px;
+    margin-top: -120px;
     margin-left: -110px;
     position: absolute;
   }
@@ -673,10 +678,11 @@ font-size: 1rem;
   .seta-esquerda-comentario{
     display: none;
   }
+
   .logo-footer{
     position: absolute;
     width: 100px;
-    left: 128px;
+    left: 145px;
     margin-top: -30px;
   }
 
@@ -686,12 +692,12 @@ font-size: 1rem;
 
   .p-footer{
     position: absolute;
-    right: 25px;
+    right: 40px;
   }
 
   .icones-footer{
     position: absolute;
-    left:120px;
+    left:135px;
     top:120px;
 
   
@@ -699,13 +705,14 @@ font-size: 1rem;
 
   .col-about{
     position: absolute;
-    margin-top:200px ;    margin-left: 120px;
+    margin-top:200px ;    
+    margin-left: 130px;
     font-size: 13px;
   }
 
   .col-contact {
     position: absolute;
-    margin-left: 230px;
+    margin-left: 250px;
     margin-top:200px ;
     font-size: 13px;
 
